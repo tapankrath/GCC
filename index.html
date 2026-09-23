@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Global Capability Centers for US Development Firms | TR Tek</title>
+<meta name="description" content="Build your own engineering Global Capability Center (GCC) in India through a partnership or fully managed model. Led by leaders who have set up and scaled GCCs for Fortune 500 enterprises.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0f1a2b; --ink-soft:#44506a; --muted:#6b7690;
+    --bg:#ffffff; --bg-alt:#f5f7fb; --line:#e3e8f0;
+    --brand:#1846d1; --brand-dark:#0f2f94; --accent:#f39c12;
+    --radius:14px; --max:1180px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:16px}
+  a{color:var(--brand);text-decoration:none}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  h1,h2,h3{line-height:1.2;letter-spacing:-.01em}
+  h1,h2{font-family:Fraunces,Georgia,serif;font-weight:600}
+  h2{font-size:clamp(1.8rem,3.2vw,2.5rem);margin-bottom:14px}
+  h3{font-size:1.15rem;font-weight:600;margin-bottom:8px}
+  p{color:var(--ink-soft)}
+  section{padding:88px 0}
+  .alt{background:var(--bg-alt)}
+  .eyebrow{display:inline-block;font-size:.78rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brand);margin-bottom:12px}
+  .lead{font-size:1.1rem;max-width:760px}
+  .center{text-align:center}.center .lead{margin:0 auto}
+  .btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:600;transition:.2s;border:2px solid transparent}
+  .btn-primary{background:var(--accent);color:#1a1200}
+  .btn-primary:hover{background:#e08e0b}
+  .btn-ghost{border-color:rgba(255,255,255,.5);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+  /* Nav */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-weight:700;font-size:1.25rem;color:var(--ink)}
+  .logo span{color:var(--brand)}
+  .nav ul{display:flex;gap:28px;list-style:none}
+  .nav ul a{color:var(--ink-soft);font-weight:500;font-size:.95rem}
+  .nav ul a:hover{color:var(--brand)}
+  .nav .btn{padding:10px 18px;font-size:.9rem}
+  @media(max-width:900px){.nav ul{display:none}}
+
+  /* Hero */
+  .hero{background:radial-gradient(1200px 500px at 85% -10%,#2a5cf0 0%,transparent 60%),linear-gradient(135deg,#0b1a3f 0%,#11245a 100%);color:#fff;padding:110px 0 100px}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.6rem);max-width:880px;margin-bottom:22px}
+  .hero p{color:#c9d4f0;font-size:1.2rem;max-width:720px;margin-bottom:34px}
+  .hero .eyebrow{color:var(--accent)}
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:70px;padding-top:36px;border-top:1px solid rgba(255,255,255,.15)}
+  .trust div strong{display:block;font-size:1.05rem;color:#fff;margin-bottom:4px}
+  .trust div span{color:#a9b7de;font-size:.92rem}
+  @media(max-width:800px){.trust{grid-template-columns:1fr 1fr}}
+
+  /* Grids & cards */
+  .grid{display:grid;gap:24px;margin-top:48px}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  @media(max-width:960px){.g3,.g4{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.g2,.g3,.g4{grid-template-columns:1fr}section{padding:64px 0}}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s}
+  .card:hover{box-shadow:0 12px 32px rgba(15,26,43,.08);transform:translateY(-2px)}
+  .icon{width:44px;height:44px;border-radius:10px;background:#e8eefc;color:var(--brand);display:grid;place-items:center;margin-bottom:16px}
+  .icon svg{width:22px;height:22px}
+
+  /* Models */
+  .model{border-radius:var(--radius);padding:36px;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+  .model.featured{border:2px solid var(--brand);position:relative}
+  .tag{position:absolute;top:-13px;left:32px;background:var(--brand);color:#fff;font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:20px;letter-spacing:.04em}
+  .model h3{font-size:1.5rem;font-family:Fraunces,Georgia,serif}
+  .model .sub{color:var(--brand);font-weight:600;margin-bottom:14px;font-size:.95rem}
+  .model ul{list-style:none;margin:18px 0 22px}
+  .model li{padding:8px 0 8px 28px;position:relative;color:var(--ink-soft);border-bottom:1px dashed var(--line)}
+  .model li:last-child{border-bottom:none}
+  .model li::before{content:"";position:absolute;left:0;top:14px;width:16px;height:16px;border-radius:50%;background:#e8eefc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231846d1' stroke-width='3'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/10px no-repeat}
+  .best{margin-top:auto;background:var(--bg-alt);border-radius:10px;padding:14px 16px;font-size:.92rem;color:var(--ink-soft)}
+  .best b{color:var(--ink)}
+
+  /* Compare table */
+  .table-wrap{overflow-x:auto;margin-top:40px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  table{width:100%;border-collapse:collapse;min-width:640px}
+  th,td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line);font-size:.95rem}
+  th{background:var(--bg-alt);font-weight:600}
+  td:first-child{font-weight:600;color:var(--ink)}
+  td{color:var(--ink-soft)}
+  tr:last-child td{border-bottom:none}
+
+  /* Timeline */
+  .timeline{margin-top:52px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px;position:relative}
+  .timeline::before{content:"";position:absolute;top:22px;left:4%;right:4%;height:2px;background:var(--line)}
+  .step{position:relative;text-align:left}
+  .dot{width:46px;height:46px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:700;margin-bottom:18px;position:relative;box-shadow:0 0 0 6px var(--bg-alt)}
+  .step .wk{font-size:.8rem;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:.06em}
+  .step h3{margin:4px 0 8px}
+  .step ul{list-style:none;font-size:.9rem;color:var(--ink-soft)}
+  .step li{padding:3px 0}
+  .step li::before{content:"– ";color:var(--muted)}
+  @media(max-width:960px){.timeline{grid-template-columns:1fr 1fr}.timeline::before{display:none}}
+  @media(max-width:560px){.timeline{grid-template-columns:1fr}}
+
+  /* Pills */
+  .pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+  .pill{background:var(--bg-alt);border:1px solid var(--line);padding:6px 12px;border-radius:20px;font-size:.85rem;color:var(--ink-soft)}
+
+  /* Leadership band */
+  .band{background:linear-gradient(135deg,#0b1a3f,#1a3aa8);color:#fff;border-radius:20px;padding:56px;display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+  .band h2{color:#fff}
+  .band p{color:#c9d4f0}
+  .band ul{list-style:none}
+  .band li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#e3e9fb}
+  .band li:last-child{border-bottom:none}
+  .band li b{color:var(--accent)}
+  @media(max-width:860px){.band{grid-template-columns:1fr;padding:36px 24px}}
+
+  /* FAQ */
+  .faq{max-width:840px;margin:44px auto 0}
+  details{border-bottom:1px solid var(--line);padding:20px 0}
+  summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.4rem;color:var(--brand);line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:12px}
+
+  /* Contact */
+  .contact{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}
+  @media(max-width:860px){.contact{grid-template-columns:1fr}}
+  form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;display:grid;gap:16px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.row{grid-template-columns:1fr}}
+  label{font-size:.85rem;font-weight:600;display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--brand);border-color:transparent}
+  form .btn{border:none;cursor:pointer;font-size:1rem}
+  .checks{list-style:none;margin-top:24px}
+  .checks li{padding:8px 0;color:var(--ink-soft)}
+  .checks li b{color:var(--ink)}
+
+  footer{background:#0b1a3f;color:#a9b7de;padding:40px 0;font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">TR<span>Tek</span></a>
+    <ul>
+      <li><a href="#why">Why a GCC</a></li>
+      <li><a href="#models">Engagement Models</a></li>
+      <li><a href="#setup">Setup Roadmap</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Global Capability Centers · India</span>
+    <h1>Your own engineering center in India, built to the standard of the Fortune 500.</h1>
+    <p>We help US software development firms stand up dedicated, high-performing Global Capability Centers (GCCs) in India. Partner with us to build it together, or let us run it for you end to end. Either way, you get enterprise-grade talent, governance, and delivery without enterprise-level overhead.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn btn-primary">Start Your GCC Conversation</a>
+      <a href="#models" class="btn btn-ghost">Compare Engagement Models</a>
+    </div>
+    <div class="trust">
+      <div><strong>Fortune 500 pedigree</strong><span>Leaders who have built and scaled GCCs for multi-billion-dollar enterprises</span></div>
+      <div><strong>90–120 days</strong><span>Typical time from signed agreement to a productive first team</span></div>
+      <div><strong>Your team, your IP</strong><span>Dedicated engineers who work only on your products</span></div>
+      <div><strong>US-aligned delivery</strong><span>Overlapping hours, agile rituals, and single-point accountability</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <span class="eyebrow">Why a GCC</span>
+    <h2>Grow capacity without giving up control.</h2>
+    <p class="lead">Traditional outsourcing gives you people. A Global Capability Center gives you a lasting extension of your company: a team that learns your codebase, follows your culture, and builds institutional knowledge that stays with you.</p>
+    <div class="grid g3">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+        <h3>Significant cost efficiency</h3>
+        <p>Reduce fully loaded engineering costs substantially compared with equivalent US hiring, and reinvest the savings in product and growth.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2M16 3.13a4 4 0 010 7.75M21 21v-2a4 4 0 00-3-3.85"/></svg></div>
+        <h3>Access to deep talent</h3>
+        <p>Tap into one of the world's largest pools of software, cloud, data, and AI engineers across Bengaluru, Hyderabad, Pune, Chennai, and emerging tier-2 cities.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Follow-the-sun velocity</h3>
+        <p>Work moves forward while your US team sleeps. Code reviews, QA cycles, and support hand-offs happen overnight, which shortens release cycles.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <h3>IP and security ownership</h3>
+        <p>Dedicated teams, isolated environments, and contracts that assign all work product and IP to you, backed by enterprise security controls.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+        <h3>Scale up or down with ease</h3>
+        <p>Start with a pod of five and grow to a hundred or more. We handle recruiting, onboarding, and workspace so you can scale in step with demand.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z"/></svg></div>
+        <h3>Win bigger client deals</h3>
+        <p>An offshore delivery center makes your firm more competitive on price and capacity when you bid for larger, longer enterprise engagements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section id="models" class="alt">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Engagement Models</span>
+      <h2>Two ways to build. One standard of excellence.</h2>
+      <p class="lead">Choose the level of ownership that fits your stage, budget, and long-term plans. You can start with one model and move to the other as you grow.</p>
+    </div>
+    <div class="grid g2">
+      <div class="model featured">
+        <span class="tag">MOST POPULAR</span>
+        <h3>Partnership Model</h3>
+        <div class="sub">Build · Operate · Transfer (BOT) / Co-Owned GCC</div>
+        <p>We build and run your GCC alongside you. Your leaders shape culture and technical direction, while we handle the entity, infrastructure, compliance, and operations. When you're ready, we transfer the center, including its people, assets, and processes, into your own Indian entity.</p>
+        <ul>
+          <li>Shared governance with joint steering committee</li>
+          <li>Your brand, your culture, your engineering practices</li>
+          <li>Option to take full ownership in 18–36 months</li>
+          <li>Transparent cost-plus pricing with no hidden markups</li>
+          <li>Pre-agreed transfer terms and a smooth legal transition</li>
+          <li>We stay on as advisors after the transfer, if you want us to</li>
+        </ul>
+        <div class="best"><b>Best for:</b> Firms that want a long-term strategic asset in India and eventual full ownership, without the risk of setting it up alone.</div>
+      </div>
+      <div class="model">
+        <h3>Managed / Outsourced Model</h3>
+        <div class="sub">Dedicated Offshore Development Center (ODC)</div>
+        <p>We provide a fully managed, dedicated team that works exclusively on your products under our legal entity. You direct the work. We take care of hiring, HR, payroll, facilities, IT, security, and day-to-day delivery management.</p>
+        <ul>
+          <li>No Indian entity or local investment required</li>
+          <li>Predictable monthly per-resource pricing</li>
+          <li>Fastest path to a productive team</li>
+          <li>Dedicated delivery manager and SLAs</li>
+          <li>Flexible ramp-up and ramp-down terms</li>
+          <li>Option to convert to a BOT partnership later</li>
+        </ul>
+        <div class="best"><b>Best for:</b> Firms that want to add capacity quickly, test the offshore model, or keep a simple operating structure.</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Consideration</th><th>Partnership (BOT)</th><th>Managed / Outsourced</th></tr></thead>
+        <tbody>
+          <tr><td>Legal entity</td><td>Ours at first, then transferred to yours</td><td>Ours throughout</td></tr>
+          <tr><td>Time to first team</td><td>90–120 days</td><td>45–75 days</td></tr>
+          <tr><td>Upfront investment</td><td>Moderate (shared setup)</td><td>Minimal</td></tr>
+          <tr><td>Control over culture and hiring</td><td>High, with joint decisions</td><td>High over work, managed over operations</td></tr>
+          <tr><td>Long-term cost</td><td>Lowest after transfer</td><td>Predictable and all-inclusive</td></tr>
+          <tr><td>Ideal team size</td><td>15+ engineers, growing</td><td>5+ engineers</td></tr>
+          <tr><td>Exit / flexibility</td><td>Full ownership path</td><td>Scale down or convert</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SETUP ROADMAP -->
+<section id="setup">
+  <div class="wrap">
+    <span class="eyebrow">Setup Roadmap</span>
+    <h2>From idea to a productive center in about 120 days.</h2>
+    <p class="lead">We follow the same proven playbook used to launch capability centers for large global enterprises, adjusted for the speed and budget of a growing development firm.</p>
+    <div class="timeline">
+      <div class="step">
+        <div class="dot">1</div>
+        <div class="wk">Weeks 1–3</div>
+        <h3>Strategy &amp; Design</h3>
+        <ul>
+          <li>Goals and scope workshop</li>
+          <li>Location and talent analysis</li>
+          <li>Org design and role mix</li>
+          <li>Business case and budget</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="dot">2</div>
+        <div class="wk">Weeks 3–8</div>
+        <h3>Entity &amp; Legal</h3>
+        <ul>
+          <li>Entity setup or ODC agreement</li>
+          <li>Tax, GST, and STPI/SEZ advice</li>
+          <li>IP, NDA, and data agreements</li>
+          <li>Banking and payroll setup</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="dot">3</div>
+        <div class="wk">Weeks 4–10</div>
+        <h3>Workspace &amp; IT</h3>
+        <ul>
+          <li>Office or managed workspace</li>
+          <li>Network, VPN, and devices</li>
+          <li>Security controls and tooling</li>
+          <li>Access to your dev stack</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="dot">4</div>
+        <div class="wk">Weeks 5–14</div>
+        <h3>Talent &amp; Onboarding</h3>
+        <ul>
+          <li>Leadership hires first</li>
+          <li>Engineering hires in waves</li>
+          <li>Joint interviews with you</li>
+          <li>Knowledge transfer plan</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="dot">5</div>
+        <div class="wk">Week 12+</div>
+        <h3>Operate &amp; Scale</h3>
+        <ul>
+          <li>Delivery governance and KPIs</li>
+          <li>Quarterly business reviews</li>
+          <li>Continuous hiring and growth</li>
+          <li>Transfer readiness (BOT)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Services</span>
+    <h2>Everything your GCC needs, under one roof.</h2>
+    <p class="lead">We cover the full life cycle of your center, from the first strategy workshop to daily delivery and eventual transfer of ownership.</p>
+
+    <div class="grid g3">
+      <div class="card">
+        <h3>GCC Advisory &amp; Strategy</h3>
+        <p>Feasibility studies, location selection, operating model design, and total cost of ownership modeling.</p>
+      </div>
+      <div class="card">
+        <h3>Entity Setup &amp; Compliance</h3>
+        <p>Company incorporation, statutory registrations, labor law compliance, transfer pricing, and ongoing secretarial work.</p>
+      </div>
+      <div class="card">
+        <h3>Talent Acquisition</h3>
+        <p>Executive search for center leaders, technical recruiting with rigorous assessment, and employer branding in India.</p>
+      </div>
+      <div class="card">
+        <h3>HR, Payroll &amp; Benefits</h3>
+        <p>Competitive compensation benchmarking, payroll, benefits, performance management, and retention programs.</p>
+      </div>
+      <div class="card">
+        <h3>Workspace &amp; Infrastructure</h3>
+        <p>Office sourcing and fit-out, managed and flexible workspaces, hardware procurement, and facilities management.</p>
+      </div>
+      <div class="card">
+        <h3>IT, Security &amp; Data Protection</h3>
+        <p>Secure networks, endpoint management, identity and access controls, and alignment with SOC 2, ISO 27001, HIPAA, and GDPR.</p>
+      </div>
+      <div class="card">
+        <h3>Delivery Management</h3>
+        <p>Agile delivery leadership, engineering metrics, quality gates, and clear escalation paths back to your US leadership.</p>
+      </div>
+      <div class="card">
+        <h3>Knowledge Transfer &amp; Onboarding</h3>
+        <p>Structured ramp-up plans, shadowing programs, documentation, and cultural integration with your home team.</p>
+      </div>
+      <div class="card">
+        <h3>Build-Operate-Transfer</h3>
+        <p>Transfer readiness assessment, legal and asset migration, and a smooth handover of people and processes to your entity.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:60px;font-size:1.3rem">Engineering capabilities we staff</h3>
+    <div class="grid g4" style="margin-top:22px">
+      <div class="card">
+        <h3>Product Engineering</h3>
+        <div class="pills"><span class="pill">Full-stack</span><span class="pill">Java / .NET</span><span class="pill">Node / Python</span><span class="pill">React / Angular</span><span class="pill">Mobile</span></div>
+      </div>
+      <div class="card">
+        <h3>Cloud &amp; DevOps</h3>
+        <div class="pills"><span class="pill">AWS</span><span class="pill">Azure</span><span class="pill">GCP</span><span class="pill">Kubernetes</span><span class="pill">CI/CD</span><span class="pill">SRE</span></div>
+      </div>
+      <div class="card">
+        <h3>Data &amp; AI</h3>
+        <div class="pills"><span class="pill">Data engineering</span><span class="pill">Analytics</span><span class="pill">ML / GenAI</span><span class="pill">MLOps</span></div>
+      </div>
+      <div class="card">
+        <h3>Quality &amp; Support</h3>
+        <div class="pills"><span class="pill">QA automation</span><span class="pill">Performance</span><span class="pill">Security testing</span><span class="pill">L2/L3 support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section>
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <span class="eyebrow" style="color:var(--accent)">The People Behind It</span>
+        <h2>Enterprise experience, sized for your firm.</h2>
+        <p>Our leadership team has designed, launched, and scaled Global Capability Centers in India for multi-billion-dollar Fortune 500 companies. We bring the same frameworks for governance, talent, security, and delivery, adapted so a growing US development shop can benefit from them.</p>
+        <p style="margin-top:14px">You get senior people who have done this many times before, not a sales team learning on your dime.</p>
+      </div>
+      <ul>
+        <li><b>Setup:</b> Hands-on experience launching GCCs from the ground up in major Indian tech hubs</li>
+        <li><b>Scale:</b> Grown centers from first hire to large, multi-function engineering organizations</li>
+        <li><b>Governance:</b> Built operating models that satisfy enterprise audit, security, and compliance teams</li>
+        <li><b>Culture:</b> Created centers that attract top talent and keep attrition below industry averages</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="alt">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">How We Work With You</span>
+      <h2>Built on transparency and shared goals.</h2>
+    </div>
+    <div class="grid g4">
+      <div class="card"><h3>One accountable partner</h3><p>A single US-facing engagement lead who owns outcomes, not just headcount.</p></div>
+      <div class="card"><h3>Open-book pricing</h3><p>Clear visibility into salaries, overhead, and our management fee.</p></div>
+      <div class="card"><h3>Measured by results</h3><p>Shared KPIs for velocity, quality, retention, and time to hire, reviewed every quarter.</p></div>
+      <div class="card"><h3>Time-zone overlap</h3><p>Planned overlap with US Eastern and Central hours for stand-ups, reviews, and planning.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">FAQ</span>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>How is a GCC different from traditional outsourcing?</summary>
+        <p>With outsourcing, a vendor delivers projects using its own shared staff. With a GCC, you get a dedicated team that works only on your products, follows your processes, and builds lasting knowledge of your business. It functions as an extension of your company, and under the partnership model it can eventually become fully yours.</p>
+      </details>
+      <details>
+        <summary>What is the minimum team size to get started?</summary>
+        <p>Under the managed model, you can start with a pod of about five engineers. For a Build-Operate-Transfer partnership, we usually recommend planning for 15 or more engineers over the first year so the economics of your own entity make sense.</p>
+      </details>
+      <details>
+        <summary>Do I need to set up an Indian company?</summary>
+        <p>Not for the managed model. The team works under our entity. For the partnership model, we operate the center under our entity at first and then help you form your own Indian subsidiary when it's time to transfer.</p>
+      </details>
+      <details>
+        <summary>How is my intellectual property protected?</summary>
+        <p>All work product and IP are assigned to you by contract. Every team member signs confidentiality and IP assignment agreements, and we use dedicated, access-controlled environments, device management, and audit logging aligned with standards such as SOC 2 and ISO 27001.</p>
+      </details>
+      <details>
+        <summary>Can I interview and approve the engineers?</summary>
+        <p>Yes. We source and screen candidates, and you take part in final interviews and approve every hire. Many clients also send leaders to India during the launch to help set the culture.</p>
+      </details>
+      <details>
+        <summary>How do you handle attrition?</summary>
+        <p>Through market-competitive pay, clear career paths, meaningful product work, and strong engagement programs. If someone does leave, we manage backfill and knowledge continuity at no extra recruiting cost to you.</p>
+      </details>
+      <details>
+        <summary>What does it cost?</summary>
+        <p>Cost depends on team size, role mix, location, and engagement model. The managed model uses a simple monthly rate per resource. The partnership model uses open-book cost-plus pricing. We'll prepare a detailed total cost of ownership estimate during our first strategy session.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow">Let's Talk</span>
+      <h2>Plan your India GCC with people who have done it before.</h2>
+      <p class="lead">Book a no-obligation strategy session. We'll discuss your goals, recommend the right model, and outline a realistic timeline and budget.</p>
+      <ul class="checks">
+        <li>✔ <b>30-minute discovery call</b> with a senior GCC leader</li>
+        <li>✔ <b>Model recommendation</b> tailored to your stage and plans</li>
+        <li>✔ <b>Indicative cost and timeline</b> for your first team</li>
+      </ul>
+    </div>
+    <!-- Replace the action URL below with your form handler (e.g., Formspree, HubSpot, or your own endpoint) -->
+    <form action="#" method="POST">
+      <div class="row">
+        <div><label for="name">Full name</label><input id="name" name="name" required></div>
+        <div><label for="company">Company</label><input id="company" name="company" required></div>
+      </div>
+      <div class="row">
+        <div><label for="email">Work email</label><input id="email" type="email" name="email" required></div>
+        <div><label for="phone">Phone</label><input id="phone" type="tel" name="phone"></div>
+      </div>
+      <div class="row">
+        <div>
+          <label for="model">Interested in</label>
+          <select id="model" name="model">
+            <option>Not sure yet</option>
+            <option>Partnership (BOT)</option>
+            <option>Managed / Outsourced</option>
+          </select>
+        </div>
+        <div>
+          <label for="size">Initial team size</label>
+          <select id="size" name="size">
+            <option>5–10</option>
+            <option>10–25</option>
+            <option>25–50</option>
+            <option>50+</option>
+          </select>
+        </div>
+      </div>
+      <div><label for="msg">Tell us about your goals</label><textarea id="msg" name="message" rows="4"></textarea></div>
+      <button type="submit" class="btn btn-primary">Request a Strategy Session</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 TR Tek LLC. All rights reserved.</span>
+    <span>Global Capability Centers · India · Serving US development firms</span>
+  </div>
+</footer>
+
+</body>
+</html>
