@@ -41,11 +41,11 @@
   .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
   .logo{font-weight:700;font-size:1.25rem;color:var(--ink)}
   .logo span{color:var(--brand)}
-  .nav ul{display:flex;gap:28px;list-style:none}
+  .nav ul{display:flex;gap:22px;list-style:none}
   .nav ul a{color:var(--ink-soft);font-weight:500;font-size:.95rem}
   .nav ul a:hover{color:var(--brand)}
   .nav .btn{padding:10px 18px;font-size:.9rem}
-  @media(max-width:900px){.nav ul{display:none}}
+  @media(max-width:1120px){.nav ul{display:none}}
 
   /* Hero */
   .hero{background:radial-gradient(1200px 500px at 85% -10%,#2a5cf0 0%,transparent 60%),linear-gradient(135deg,#0b1a3f 0%,#11245a 100%);color:#fff;padding:110px 0 100px}
@@ -142,6 +142,30 @@
   .checks li{padding:8px 0;color:var(--ink-soft)}
   .checks li b{color:var(--ink)}
 
+  /* AI section */
+  .ai-hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  @media(max-width:860px){.ai-hero{grid-template-columns:1fr}}
+  .ai-stack{background:linear-gradient(135deg,#0b1a3f,#1a3aa8);border-radius:var(--radius);padding:28px;color:#fff}
+  .ai-layer{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+  .ai-layer:last-child{margin-bottom:0}
+  .ai-layer b{display:block;color:#fff;font-size:.95rem}
+  .ai-layer span{color:#b9c6ea;font-size:.85rem}
+  .ai-layer.hl{background:var(--accent);border-color:var(--accent)}
+  .ai-layer.hl b,.ai-layer.hl span{color:#1a1200}
+  .card .for{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:.85rem;color:var(--muted)}
+  .card .for b{color:var(--ink)}
+  .badge{display:inline-block;background:#fff4e0;color:#8a5300;font-size:.72rem;font-weight:700;letter-spacing:.06em;padding:3px 9px;border-radius:12px;margin-bottom:12px;text-transform:uppercase}
+
+  /* Customize */
+  .cust{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
+  @media(max-width:960px){.cust{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.cust{grid-template-columns:1fr}}
+  .cust .card h3{display:flex;align-items:center;gap:10px}
+  .cust .num{width:28px;height:28px;border-radius:8px;background:var(--brand);color:#fff;font-size:.85rem;display:grid;place-items:center;flex:none}
+  .opts{list-style:none;margin-top:10px}
+  .opts li{font-size:.9rem;color:var(--ink-soft);padding:4px 0 4px 16px;position:relative}
+  .opts li::before{content:"";position:absolute;left:0;top:13px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+
   footer{background:#0b1a3f;color:#a9b7de;padding:40px 0;font-size:.9rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
 </style>
@@ -156,6 +180,8 @@
       <li><a href="#models">Engagement Models</a></li>
       <li><a href="#setup">Setup Roadmap</a></li>
       <li><a href="#services">Services</a></li>
+      <li><a href="#ai">AI Enablement</a></li>
+      <li><a href="#customize">Customize</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
     <a href="#contact" class="btn btn-primary">Book a Consultation</a>
@@ -166,8 +192,8 @@
 <section class="hero">
   <div class="wrap">
     <span class="eyebrow">Global Capability Centers · India</span>
-    <h1>Your own engineering center in India, built to the standard of the Fortune 500.</h1>
-    <p>We help US software development firms stand up dedicated, high-performing Global Capability Centers (GCCs) in India. Partner with us to build it together, or let us run it for you end to end. Either way, you get enterprise-grade talent, governance, and delivery without enterprise-level overhead.</p>
+    <h1>Your own AI-ready engineering center in India, built to the standard of the Fortune 500.</h1>
+    <p>We help US software development firms stand up dedicated, high-performing Global Capability Centers (GCCs) in India, with AI built into how the team works and what it delivers. Partner with us to build it together, or let us run it for you end to end. Every center is tailored to your stack, your clients, and your goals, with enterprise-grade talent, governance, and delivery and without enterprise-level overhead.</p>
     <div class="hero-ctas">
       <a href="#contact" class="btn btn-primary">Start Your GCC Conversation</a>
       <a href="#models" class="btn btn-ghost">Compare Engagement Models</a>
@@ -175,7 +201,7 @@
     <div class="trust">
       <div><strong>Fortune 500 pedigree</strong><span>Leaders who have built and scaled GCCs for multi-billion-dollar enterprises</span></div>
       <div><strong>90–120 days</strong><span>Typical time from signed agreement to a productive first team</span></div>
-      <div><strong>Your team, your IP</strong><span>Dedicated engineers who work only on your products</span></div>
+      <div><strong>AI-native delivery</strong><span>AI-assisted engineering, governance, and GenAI skills built in from day one</span></div>
       <div><strong>US-aligned delivery</strong><span>Overlapping hours, agile rituals, and single-point accountability</span></div>
     </div>
   </div>
@@ -196,7 +222,7 @@
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 014-4h4a4 4 0 014 4v2M16 3.13a4 4 0 010 7.75M21 21v-2a4 4 0 00-3-3.85"/></svg></div>
         <h3>Access to deep talent</h3>
-        <p>Tap into one of the world's largest pools of software, cloud, data, and AI engineers across Bengaluru, Hyderabad, Pune, Chennai, and emerging tier-2 cities.</p>
+        <p>Tap into one of the world's largest and fastest-growing pools of software, cloud, data, ML, and GenAI engineers across Bengaluru, Hyderabad, Pune, Chennai, and emerging tier-2 cities.</p>
       </div>
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
@@ -215,8 +241,8 @@
       </div>
       <div class="card">
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5 2 7L12 16l-6.5 4.5 2-7L2 9h7z"/></svg></div>
-        <h3>Win bigger client deals</h3>
-        <p>An offshore delivery center makes your firm more competitive on price and capacity when you bid for larger, longer enterprise engagements.</p>
+        <h3>Win bigger, AI-led deals</h3>
+        <p>A dedicated center with real AI engineering skill makes your firm more competitive on price, capacity, and capability when you bid for larger enterprise and AI transformation work.</p>
       </div>
     </div>
   </div>
@@ -242,6 +268,7 @@
           <li>Option to take full ownership in 18–36 months</li>
           <li>Transparent cost-plus pricing with no hidden markups</li>
           <li>Pre-agreed transfer terms and a smooth legal transition</li>
+          <li>Optional AI Center of Excellence built into your GCC</li>
           <li>We stay on as advisors after the transfer, if you want us to</li>
         </ul>
         <div class="best"><b>Best for:</b> Firms that want a long-term strategic asset in India and eventual full ownership, without the risk of setting it up alone.</div>
@@ -256,6 +283,7 @@
           <li>Fastest path to a productive team</li>
           <li>Dedicated delivery manager and SLAs</li>
           <li>Flexible ramp-up and ramp-down terms</li>
+          <li>AI-assisted delivery and on-demand AI/ML specialists</li>
           <li>Option to convert to a BOT partnership later</li>
         </ul>
         <div class="best"><b>Best for:</b> Firms that want to add capacity quickly, test the offshore model, or keep a simple operating structure.</div>
@@ -272,6 +300,8 @@
           <tr><td>Control over culture and hiring</td><td>High, with joint decisions</td><td>High over work, managed over operations</td></tr>
           <tr><td>Long-term cost</td><td>Lowest after transfer</td><td>Predictable and all-inclusive</td></tr>
           <tr><td>Ideal team size</td><td>15+ engineers, growing</td><td>5+ engineers</td></tr>
+          <tr><td>AI enablement</td><td>Your own AI Center of Excellence, owned by you after transfer</td><td>AI-assisted delivery plus AI specialist pods on demand</td></tr>
+          <tr><td>Customization</td><td>Fully tailored operating model, brand, and governance</td><td>Tailored team mix, tooling, and SLAs</td></tr>
           <tr><td>Exit / flexibility</td><td>Full ownership path</td><td>Scale down or convert</td></tr>
         </tbody>
       </table>
@@ -294,6 +324,7 @@
           <li>Goals and scope workshop</li>
           <li>Location and talent analysis</li>
           <li>Org design and role mix</li>
+          <li>AI readiness assessment</li>
           <li>Business case and budget</li>
         </ul>
       </div>
@@ -317,6 +348,7 @@
           <li>Network, VPN, and devices</li>
           <li>Security controls and tooling</li>
           <li>Access to your dev stack</li>
+          <li>Approved AI tools and guardrails</li>
         </ul>
       </div>
       <div class="step">
@@ -328,6 +360,7 @@
           <li>Engineering hires in waves</li>
           <li>Joint interviews with you</li>
           <li>Knowledge transfer plan</li>
+          <li>AI engineering bootcamp</li>
         </ul>
       </div>
       <div class="step">
@@ -336,6 +369,7 @@
         <h3>Operate &amp; Scale</h3>
         <ul>
           <li>Delivery governance and KPIs</li>
+          <li>AI productivity tracking</li>
           <li>Quarterly business reviews</li>
           <li>Continuous hiring and growth</li>
           <li>Transfer readiness (BOT)</li>
@@ -379,7 +413,7 @@
       </div>
       <div class="card">
         <h3>Delivery Management</h3>
-        <p>Agile delivery leadership, engineering metrics, quality gates, and clear escalation paths back to your US leadership.</p>
+        <p>Agile delivery leadership, AI-augmented workflows, engineering metrics, quality gates, and clear escalation paths back to your US leadership.</p>
       </div>
       <div class="card">
         <h3>Knowledge Transfer &amp; Onboarding</h3>
@@ -403,11 +437,132 @@
       </div>
       <div class="card">
         <h3>Data &amp; AI</h3>
-        <div class="pills"><span class="pill">Data engineering</span><span class="pill">Analytics</span><span class="pill">ML / GenAI</span><span class="pill">MLOps</span></div>
+        <div class="pills"><span class="pill">Data engineering</span><span class="pill">Analytics</span><span class="pill">Machine learning</span><span class="pill">GenAI / LLMs</span><span class="pill">RAG &amp; agents</span><span class="pill">MLOps / LLMOps</span></div>
       </div>
       <div class="card">
         <h3>Quality &amp; Support</h3>
-        <div class="pills"><span class="pill">QA automation</span><span class="pill">Performance</span><span class="pill">Security testing</span><span class="pill">L2/L3 support</span></div>
+        <div class="pills"><span class="pill">QA automation</span><span class="pill">AI-driven testing</span><span class="pill">Performance</span><span class="pill">Security testing</span><span class="pill">L2/L3 support</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AI ENABLEMENT -->
+<section id="ai">
+  <div class="wrap">
+    <div class="ai-hero">
+      <div>
+        <span class="eyebrow">AI Enablement</span>
+        <h2>An AI-native GCC, not just an offshore team.</h2>
+        <p class="lead">AI is changing how software is built and what your clients expect to buy. We make AI part of your GCC from the start, so your team ships faster with AI-assisted engineering and your firm can confidently sell and deliver AI solutions to its own clients.</p>
+        <p style="margin-top:14px">Every AI service is modular. Adopt one capability or build a full AI Center of Excellence, fitted to your stack, your clients' industries, and your risk and compliance needs.</p>
+      </div>
+      <div class="ai-stack" aria-label="AI enablement layers">
+        <div class="ai-layer hl"><b>AI Solutions for Your Clients</b><span>GenAI apps, copilots, agents, intelligent automation</span></div>
+        <div class="ai-layer"><b>AI Center of Excellence</b><span>Reusable accelerators, patterns, and specialist talent</span></div>
+        <div class="ai-layer"><b>AI-Augmented Engineering</b><span>AI coding assistants, AI code review, test generation</span></div>
+        <div class="ai-layer"><b>Data &amp; Platform Foundation</b><span>Data pipelines, vector stores, MLOps / LLMOps</span></div>
+        <div class="ai-layer"><b>Responsible AI &amp; Governance</b><span>Policies, security, IP protection, compliance</span></div>
+      </div>
+    </div>
+
+    <div class="grid g3">
+      <div class="card">
+        <span class="badge">Productivity</span>
+        <h3>AI-Augmented Engineering</h3>
+        <p>We roll out and govern AI coding assistants, AI-driven code review, automated test generation, and documentation tools across your GCC, with baseline and ongoing metrics so you can see the productivity gains.</p>
+        <div class="for"><b>Tailored to:</b> your IDEs, repos, languages, and approved tool list</div>
+      </div>
+      <div class="card">
+        <span class="badge">Build</span>
+        <h3>GenAI &amp; LLM Application Development</h3>
+        <p>Design and build production-grade AI products: retrieval-augmented generation (RAG), chatbots and copilots, document intelligence, AI agents, and workflow automation on leading commercial and open-source models.</p>
+        <div class="for"><b>Tailored to:</b> your clients' domains, data, and preferred cloud or model providers</div>
+      </div>
+      <div class="card">
+        <span class="badge">Capability</span>
+        <h3>AI Center of Excellence</h3>
+        <p>A dedicated AI pod inside your GCC with architects, ML engineers, and data scientists who build reusable accelerators, reference architectures, and proofs of concept that help your sales team win AI deals.</p>
+        <div class="for"><b>Tailored to:</b> your go-to-market focus and target industries</div>
+      </div>
+      <div class="card">
+        <span class="badge">Foundation</span>
+        <h3>Data Readiness &amp; AI Platforms</h3>
+        <p>Data engineering, data quality, and the AI platform underneath it all: vector databases, feature stores, model hosting, evaluation pipelines, and MLOps/LLMOps for reliable, monitored AI in production.</p>
+        <div class="for"><b>Tailored to:</b> AWS, Azure, GCP, or hybrid environments</div>
+      </div>
+      <div class="card">
+        <span class="badge">Trust</span>
+        <h3>Responsible AI &amp; Governance</h3>
+        <p>AI usage policies, data privacy controls, model risk management, and safeguards so client code and data never leak into public models. Aligned with emerging frameworks such as the NIST AI RMF and ISO/IEC 42001.</p>
+        <div class="for"><b>Tailored to:</b> your clients' regulatory needs (healthcare, finance, and more)</div>
+      </div>
+      <div class="card">
+        <span class="badge">People</span>
+        <h3>AI Talent &amp; Upskilling Academy</h3>
+        <p>Hiring for scarce AI roles, plus structured training that turns your full-stack, QA, and data engineers into confident AI practitioners, with learning paths, hands-on labs, and certifications.</p>
+        <div class="for"><b>Tailored to:</b> each role's current skills and your AI roadmap</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CUSTOMIZE -->
+<section id="customize" class="alt">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Built Around You</span>
+      <h2>No two GCCs are alike. Yours shouldn't be either.</h2>
+      <p class="lead">We don't sell a fixed package. Every part of your center can be configured to match your business today and adjusted as it grows.</p>
+    </div>
+    <div class="cust">
+      <div class="card">
+        <h3><span class="num">1</span>Engagement structure</h3>
+        <ul class="opts">
+          <li>Partnership (BOT), managed, or a hybrid of both</li>
+          <li>Custom transfer timing and terms</li>
+          <li>Start managed, convert to BOT later</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="num">2</span>Team composition</h3>
+        <ul class="opts">
+          <li>Your mix of engineering, QA, DevOps, data, and AI roles</li>
+          <li>Seniority levels and leadership structure</li>
+          <li>Dedicated pods per client or product</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="num">3</span>Technology &amp; AI stack</h3>
+        <ul class="opts">
+          <li>Your languages, frameworks, and cloud</li>
+          <li>Your choice of AI tools and model providers</li>
+          <li>Integration with your existing toolchain</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="num">4</span>Location &amp; workspace</h3>
+        <ul class="opts">
+          <li>Tier-1 hubs or cost-efficient tier-2 cities</li>
+          <li>Dedicated office, managed space, or hybrid</li>
+          <li>Branded workspace in your identity</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="num">5</span>Governance &amp; compliance</h3>
+        <ul class="opts">
+          <li>Security controls matched to your clients' needs</li>
+          <li>Reporting cadence, KPIs, and SLAs you define</li>
+          <li>Industry-specific compliance (HIPAA, PCI, SOC 2)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="num">6</span>Working model &amp; pricing</h3>
+        <ul class="opts">
+          <li>Shift overlap aligned to your US time zones</li>
+          <li>Per-resource, cost-plus, or outcome-based pricing</li>
+          <li>Flexible terms to ramp up or down</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -427,6 +582,7 @@
         <li><b>Setup:</b> Hands-on experience launching GCCs from the ground up in major Indian tech hubs</li>
         <li><b>Scale:</b> Grown centers from first hire to large, multi-function engineering organizations</li>
         <li><b>Governance:</b> Built operating models that satisfy enterprise audit, security, and compliance teams</li>
+        <li><b>AI:</b> Led enterprise AI and automation programs, from early pilots to governed production rollouts</li>
         <li><b>Culture:</b> Created centers that attract top talent and keep attrition below industry averages</li>
       </ul>
     </div>
@@ -482,6 +638,18 @@
         <p>Through market-competitive pay, clear career paths, meaningful product work, and strong engagement programs. If someone does leave, we manage backfill and knowledge continuity at no extra recruiting cost to you.</p>
       </details>
       <details>
+        <summary>How does AI fit into our GCC?</summary>
+        <p>In two ways. First, your team works in an AI-augmented way, using governed AI coding, testing, and documentation tools to deliver faster. Second, you can add AI specialists or a full AI Center of Excellence to build GenAI and machine learning solutions that your firm sells to its clients. You choose the level of AI investment that fits your plans.</p>
+      </details>
+      <details>
+        <summary>Is our code and client data safe when the team uses AI tools?</summary>
+        <p>Yes. We only deploy enterprise-grade AI tools with data-retention and training protections, enforce a written AI usage policy, restrict which repositories and data can be exposed to AI tools, and log usage. For sensitive clients, we can use private or self-hosted models that keep all data inside your environment.</p>
+      </details>
+      <details>
+        <summary>Can you customize the setup to our specific needs?</summary>
+        <p>Always. Team mix, tech and AI stack, location, security controls, reporting, and pricing structure are all designed around your business. Many clients start small with one model and adjust as they grow.</p>
+      </details>
+      <details>
         <summary>What does it cost?</summary>
         <p>Cost depends on team size, role mix, location, and engagement model. The managed model uses a simple monthly rate per resource. The partnership model uses open-book cost-plus pricing. We'll prepare a detailed total cost of ownership estimate during our first strategy session.</p>
       </details>
@@ -499,6 +667,7 @@
       <ul class="checks">
         <li>✔ <b>30-minute discovery call</b> with a senior GCC leader</li>
         <li>✔ <b>Model recommendation</b> tailored to your stage and plans</li>
+        <li>✔ <b>AI readiness snapshot</b> with quick wins for your team</li>
         <li>✔ <b>Indicative cost and timeline</b> for your first team</li>
       </ul>
     </div>
@@ -530,6 +699,16 @@
             <option>50+</option>
           </select>
         </div>
+      </div>
+      <div>
+        <label for="aiint">AI enablement interest</label>
+        <select id="aiint" name="ai_interest">
+          <option>Not sure yet, help me decide</option>
+          <option>AI-augmented engineering for our team</option>
+          <option>Building GenAI / AI solutions for our clients</option>
+          <option>A full AI Center of Excellence</option>
+          <option>Not needed right now</option>
+        </select>
       </div>
       <div><label for="msg">Tell us about your goals</label><textarea id="msg" name="message" rows="4"></textarea></div>
       <button type="submit" class="btn btn-primary">Request a Strategy Session</button>
